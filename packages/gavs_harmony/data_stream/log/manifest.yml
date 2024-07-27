@@ -1,4 +1,4 @@
-title: "data from log events "
+title: "collect data from log events "
 type: logs
 streams:
   - input: logfile
@@ -8,6 +8,7 @@ streams:
       - name: paths
         type: text
         title: Paths
+        description: 
         multi: true
         default:
           - /var/log/*.log

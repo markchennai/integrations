@@ -2,6 +2,8 @@ format_version: 3.2.1
 name: gavs_harmony
 title: "GavsHarmony"
 version: 1.0.0
+description: Collect logs from Harmony with Elastic Agent.
+type: integration
 source:
   license: "Elastic-2.0"
 description: "Gavs Harmony integration package to collect logs"
@@ -31,6 +33,11 @@ policy_templates:
       - type: logfile
         title: Collect sample logs from instances
         description: Collecting sample logs
+        vars:
+          - name: url
+            type: text
+            title: URL
+            description: Harmony API - Sample
 owner:
   github: markchennai
   type: elastic
